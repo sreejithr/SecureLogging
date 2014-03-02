@@ -26,6 +26,9 @@ class FileChangeHandler:
         """
         pass
 
+
+class LogFileSender:
+
     def _log_send(self):
         """
         This function sends the contents of the PATH specified to the TARGET path

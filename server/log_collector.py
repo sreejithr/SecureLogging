@@ -13,15 +13,16 @@ from .rsync import rsync_logs
 
 
 class LogCollector:
-    def __init__(self, target_username, target_ip):
+    def __init__(self, target_username, target_ip, target_path):
         self.target_username = target_user
         self.target_ip = target_ip
+        self.target_path = target_path
 
     def _collect_logs(self):
         """
         This method collects logs from the target machine using rsync
         """
-        return rsync_logs(self.target_username, self.target_ip)
+        return rsync_logs(self.target_username, self.target_ip, self._target_path)
 
 if __name__ == '__main__':
     pass

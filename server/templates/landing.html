@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html><head>
+<title>Chat</title>
+<meta http-equiv='X-UA-Compatible" content='IE=edge,chrome=1'/>
+<meta http-equiv='cache-control' content='no-cache' />
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Chat</h1>
+    </header>
+
+    <script src="{{ url_for('static', filename='scripts/jquery-1.11.0.js') }}"></script>
+
+    <script>
+    	var a = 5;
+    	document.write(a);
+    	window.onload=function() {
+    		var s = new WebSocket("ws://localhost:8000/file");
+    		s.onopen(e) = function(e) {alert('opened');}
+    	}
+    </script>
+
+</body> </html>

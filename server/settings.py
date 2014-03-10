@@ -1,0 +1,4 @@
+DATABASE_NAME = 'server_db.db'
+FILES_TABLE_NAME = 'tracked_files'
+CLIENTS_TABLE_NAME = 'clients'
+LOG_COLLECT_INTERVAL = 300

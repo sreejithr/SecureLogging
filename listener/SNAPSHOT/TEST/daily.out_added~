@@ -1,0 +1,1398 @@
+
+Fri Feb  7 13:10:12 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   18Gi  214Gi     8% 4746199 56093543    8%   /
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                          2870     0     2870     0     0
+lo0   16384 localhost   ::1                   2870     -     2870     -     -
+lo0   16384 127           localhost           2870     -     2870     -     -
+lo0   16384 localhost   fe80:1::1             2870     -     2870     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88   246333     0   171536     0     0
+en1   1500  sreejiths-m fe80:5::f2b4:79ff   246333     -   171536     -     -
+en1   1500  192.168.1     192.168.1.15      246333     -   171536     -     -
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0  2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+
+Local system status:
+13:10  up 16:54, 4 users, load averages: 1.53 1.20 1.21
+
+-- End of daily output --
+
+Sat Feb  8 01:46:38 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem       Size   Used  Avail Capacity iused    ifree %iused  Mounted on
+/dev/disk0s2    232Gi   18Gi  213Gi     8% 4887733 55952009    8%   /
+/dev/disk1s0s2   53Mi   53Mi    0Bi   100%   13580        0  100%   /Volumes/Airtel
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                          9577     0     9577     0     0
+lo0   16384 localhost   ::1                   9577     -     9577     -     -
+lo0   16384 127           localhost           9577     -     9577     -     -
+lo0   16384 localhost   fe80:1::1             9577     -     9577     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88   705181     0   485473     0     0
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0* 2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+en3   1500  <Link#8>    34:4b:50:b7:ef:4a   231357     0   394644     0     0
+en3   1500  sreejiths-m fe80:8::364b:50ff   231357     -   394644     -     -
+en3   1500  192.168.0     192.168.0.144     231357     -   394644     -     -
+
+Local system status:
+ 1:46  up 1 day,  5:30, 4 users, load averages: 1.07 1.10 1.24
+
+-- End of daily output --
+
+Sun Feb  9 15:39:34 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem       Size   Used  Avail Capacity iused    ifree %iused  Mounted on
+/dev/disk0s2    232Gi   22Gi  209Gi    10% 5921316 54918426   10%   /
+/dev/disk1s0s2   53Mi   53Mi    0Bi   100%   13580        0  100%   /Volumes/Airtel
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                         11635     0    11635     0     0
+lo0   16384 localhost   ::1                  11635     -    11635     -     -
+lo0   16384 127           localhost          11635     -    11635     -     -
+lo0   16384 localhost   fe80:1::1            11635     -    11635     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88   708425     0   488410     0     0
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0* 2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+en3   1500  <Link#8>    34:4b:50:b7:ef:4a    25845     0    26347     0     0
+en3   1500  sreejiths-m fe80:8::364b:50ff    25845     -    26347     -     -
+en3   1500  192.168.0     192.168.0.144      25845     -    26347     -     -
+
+Local system status:
+15:39  up 2 days, 19:23, 2 users, load averages: 1.27 1.10 1.10
+
+-- End of daily output --
+
+Mon Feb 10 21:33:43 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem       Size   Used  Avail Capacity iused    ifree %iused  Mounted on
+/dev/disk0s2    232Gi   30Gi  202Gi    13% 7945773 52893969   13%   /
+/dev/disk1s2    130Mi  130Mi    0Bi   100%   66562        0  100%   /Volumes/Emacs
+/dev/disk2s0s2   53Mi   53Mi    0Bi   100%   13580        0  100%   /Volumes/Airtel
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                        792981     0   792981     0     0
+lo0   16384 localhost   ::1                 792981     -   792981     -     -
+lo0   16384 127           localhost         792981     -   792981     -     -
+lo0   16384 localhost   fe80:1::1           792981     -   792981     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88  2493819     0  1798560     0     0
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0* 2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+en3   1500  <Link#8>    34:4b:50:b7:ef:4a   220992     0   160784     0     0
+en3   1500  sreejiths-m fe80:8::364b:50ff   220992     -   160784     -     -
+en3   1500  192.168.0     192.168.0.144     220992     -   160784     -     -
+bridg 1500  <Link#9>    5a:b0:35:2f:b2:64       43     0       50     0     0
+bridg 1500  192.168.2     192.168.2.1           43     -       50     -     -
+
+Local system status:
+21:33  up 10:41, 4 users, load averages: 2.01 2.02 2.52
+
+-- End of daily output --
+
+Tue Feb 11 12:17:41 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   31Gi  201Gi    14% 8227903 52611839   14%   /
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                           789     0      789     0     0
+lo0   16384 localhost   ::1                    789     -      789     -     -
+lo0   16384 127           localhost            789     -      789     -     -
+lo0   16384 localhost   fe80:1::1              789     -      789     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88   203699     0   155269     0     0
+en1   1500  sreejiths-m fe80:5::f2b4:79ff   203699     -   155269     -     -
+en1   1500  192.168.1     192.168.1.15      203699     -   155269     -     -
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0  2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+
+Local system status:
+12:17  up  1:58, 3 users, load averages: 1.13 1.35 1.42
+
+-- End of daily output --
+
+Wed Feb 12 13:59:59 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem       Size   Used  Avail Capacity iused    ifree %iused  Mounted on
+/dev/disk0s2    232Gi   33Gi  199Gi    15% 8652666 52187076   14%   /
+/dev/disk1s0s2   53Mi   53Mi    0Bi   100%   13580        0  100%   /Volumes/Airtel
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                         24400     0    24400     0     0
+lo0   16384 localhost   ::1                  24400     -    24400     -     -
+lo0   16384 127           localhost          24400     -    24400     -     -
+lo0   16384 localhost   fe80:1::1            24400     -    24400     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88  1279013     0   880009     0     0
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0* 2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+en3   1500  <Link#8>    34:4b:50:b7:ef:4a    72324     0    37371     0     0
+en3   1500  sreejiths-m fe80:8::364b:50ff    72324     -    37371     -     -
+en3   1500  192.168.0     sreejiths-mbp      72324     -    37371     -     -
+
+Local system status:
+14:00  up 1 day,  3:40, 3 users, load averages: 1.14 1.20 1.91
+
+-- End of daily output --
+
+Fri Feb 14 01:34:14 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem       Size   Used  Avail Capacity iused    ifree %iused  Mounted on
+/dev/disk0s2    232Gi   36Gi  195Gi    16% 9629850 51209892   16%   /
+/dev/disk1s0s2   53Mi   53Mi    0Bi   100%   13580        0  100%   /Volumes/Airtel
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                         38723     0    38723     0     0
+lo0   16384 localhost   ::1                  38723     -    38723     -     -
+lo0   16384 127           localhost          38723     -    38723     -     -
+lo0   16384 localhost   fe80:1::1            38723     -    38723     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88  1684666     0  1209829     0     0
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0* 2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+en3   1500  <Link#8>    34:4b:50:b7:ef:4a   124582     0   100296     0     0
+en3   1500  sreejiths-m fe80:8::364b:50ff   124582     -   100296     -     -
+en3   1500  192.168.0     192.168.0.144     124582     -   100296     -     -
+
+Local system status:
+ 1:34  up 2 days, 15:14, 3 users, load averages: 1.58 1.41 1.40
+
+-- End of daily output --
+
+Sat Feb 15 01:46:50 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem       Size   Used  Avail Capacity iused    ifree %iused  Mounted on
+/dev/disk0s2    232Gi   37Gi  194Gi    17% 9858919 50980823   16%   /
+/dev/disk1s0s2   53Mi   53Mi    0Bi   100%   13580        0  100%   /Volumes/Airtel
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                         52639     0    52639     0     0
+lo0   16384 localhost   ::1                  52639     -    52639     -     -
+lo0   16384 127           localhost          52639     -    52639     -     -
+lo0   16384 localhost   fe80:1::1            52639     -    52639     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88  3081149     0  2250182     0     0
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0* 2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+en3   1500  <Link#8>    34:4b:50:b7:ef:4a    84149     0    85448     0     0
+en3   1500  sreejiths-m fe80:8::364b:50ff    84149     -    85448     -     -
+en3   1500  192.168.0     sreejiths-mbp      84149     -    85448     -     -
+
+Local system status:
+ 1:46  up 3 days, 15:27, 1 user, load averages: 1.09 1.09 1.15
+
+-- End of daily output --
+
+Sun Feb 16 09:53:06 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   37Gi  194Gi    17% 9854847 50984895   16%   /
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                         60297     0    60297     0     0
+lo0   16384 localhost   ::1                  60297     -    60297     -     -
+lo0   16384 127           localhost          60297     -    60297     -     -
+lo0   16384 localhost   fe80:1::1            60297     -    60297     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88  3081552     0  2250649     0     0
+en1   1500  sreejiths-m fe80:5::f2b4:79ff  3081552     -  2250649     -     -
+en1   1500  192.168.0     192.168.0.105    3081552     -  2250649     -     -
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0  2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+
+Local system status:
+ 9:53  up 4 days, 23:33, 3 users, load averages: 5.22 9.14 5.45
+
+-- End of daily output --
+
+Mon Feb 17 11:25:41 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   38Gi  194Gi    17% 9941715 50898027   16%   /
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                         83269     0    83269     0     0
+lo0   16384 localhost   ::1                  83269     -    83269     -     -
+lo0   16384 127           localhost          83269     -    83269     -     -
+lo0   16384 localhost   fe80:1::1            83269     -    83269     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88  3261718     0  2394448     0     0
+en1   1500  sreejiths-m fe80:5::f2b4:79ff  3261718     -  2394448     -     -
+en1   1500  192.168.1     192.168.1.15     3261718     -  2394448     -     -
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0  2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+vboxn 1500  <Link#10>   0a:00:27:00:00:00        0     0        0     0     0
+vboxn 1500  192.168.56    192.168.56.1           0     -        0     -     -
+
+Local system status:
+11:25  up 6 days,  1:06, 2 users, load averages: 43.42 16.88 8.25
+
+-- End of daily output --
+
+Tue Feb 18 00:57:49 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   39Gi  193Gi    17% 10215630 50624112   17%   /
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                          1296     0     1296     0     0
+lo0   16384 localhost   ::1                   1296     -     1296     -     -
+lo0   16384 127           localhost           1296     -     1296     -     -
+lo0   16384 localhost   fe80:1::1             1296     -     1296     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88        0     0        0     0     0
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0* 2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+en3   1500  <Link#8>    34:4b:50:b7:ef:4a       13     0      172     0     0
+en3   1500  sreejiths-m fe80:8::364b:50ff       13     -      172     -     -
+en3   1500  192.168.0     sreejiths-mbp         13     -      172     -     -
+
+Local system status:
+ 0:57  up  3:55, 1 user, load averages: 7.45 3.33 2.15
+
+-- End of daily output --
+
+Thu Feb 20 01:29:22 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   43Gi  189Gi    19% 11210679 49629063   18%   /
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                         29306     0    29306     0     0
+lo0   16384 localhost   ::1                  29306     -    29306     -     -
+lo0   16384 127           localhost          29306     -    29306     -     -
+lo0   16384 localhost   fe80:1::1            29306     -    29306     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88   362790     0   247452     0     0
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0* 2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+en3   1500  <Link#8>    34:4b:50:b7:ef:4a       10     0       99     0     0
+en3   1500  sreejiths-m fe80:8::364b:50ff       10     -       99     -     -
+en3   1500  192.168.0     sreejiths-mbp         10     -       99     -     -
+
+Local system status:
+ 1:29  up  7:35, 1 user, load averages: 39.37 11.26 5.00
+
+-- End of daily output --
+
+Fri Feb 21 10:45:09 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   42Gi  189Gi    19% 11190011 49649731   18%   /
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                         24560     0    24560     0     0
+lo0   16384 localhost   ::1                  24560     -    24560     -     -
+lo0   16384 127           localhost          24560     -    24560     -     -
+lo0   16384 sreejiths-m fe80:1::1            24560     -    24560     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88   915502     0   731608     0     0
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0* 2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+
+Local system status:
+10:45  up 23:54, 1 user, load averages: 22.74 6.59 3.28
+
+-- End of daily output --
+
+Sat Feb 22 00:17:29 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem       Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2    232Gi   44Gi  188Gi    19% 11497866 49341876   19%   /
+/dev/disk1s0s2   53Mi   53Mi    0Bi   100%    13580        0  100%   /Volumes/Airtel
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                         47851     0    47851     0     0
+lo0   16384 localhost   ::1                  47851     -    47851     -     -
+lo0   16384 127           localhost          47851     -    47851     -     -
+lo0   16384 localhost   fe80:1::1            47851     -    47851     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88  1810593     0  1414074     0     0
+en1   1500  169.254       sreejiths-macbo  1810593     -  1414074     -     -
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0* 2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+en3   1500  <Link#8>    34:4b:50:b7:ef:4a   110502     0   175873     0     0
+en3   1500  sreejiths-m fe80:8::364b:50ff   110502     -   175873     -     -
+en3   1500  192.168.0     sreejiths-mbp     110502     -   175873     -     -
+bridg 1500  <Link#9>    5a:b0:35:2f:b2:64    25150     0    21104     0     0
+bridg 1500  192.168.2     192.168.2.1        25150     -    21104     -     -
+
+Local system status:
+ 0:17  up 1 day, 13:26, 5 users, load averages: 1.28 1.41 1.71
+
+-- End of daily output --
+
+Sun Feb 23 16:10:31 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   45Gi  187Gi    20% 11748432 49091310   19%   /
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                           667     0      667     0     0
+lo0   16384 localhost   ::1                    667     -      667     -     -
+lo0   16384 127           localhost            667     -      667     -     -
+lo0   16384 localhost   fe80:1::1              667     -      667     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88    63013     0    63644     0     0
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0* 2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+en3   1500  <Link#8>    34:4b:50:b7:ef:4a   241913     0   174937     0     0
+en3   1500  sreejiths-m fe80:8::364b:50ff   241913     -   174937     -     -
+en3   1500  192.168.0     192.168.0.144     241913     -   174937     -     -
+
+Local system status:
+16:10  up  4:08, 3 users, load averages: 1.62 1.81 1.65
+
+-- End of daily output --
+
+Mon Feb 24 20:11:05 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem       Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2    232Gi   46Gi  186Gi    20% 12085306 48754436   20%   /
+/dev/disk1s2    200Mi  190Mi   10Mi    96%    48631     2557   95%   /Volumes/Aquamacs Emacs
+/dev/disk2s0s2   53Mi   53Mi    0Bi   100%    13580        0  100%   /Volumes/Airtel
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                          3016     0     3016     0     0
+lo0   16384 localhost   ::1                   3016     -     3016     -     -
+lo0   16384 127           localhost           3016     -     3016     -     -
+lo0   16384 localhost   fe80:1::1             3016     -     3016     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88   128040     0    96145     0     0
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0* 2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+en3   1500  <Link#8>    34:4b:50:b7:ef:4a     4506     0     4865     0     0
+en3   1500  sreejiths-m fe80:8::364b:50ff     4506     -     4865     -     -
+en3   1500  192.168.0     sreejiths-mbp       4506     -     4865     -     -
+
+Local system status:
+20:11  up  9:28, 3 users, load averages: 1.07 1.19 1.78
+
+-- End of daily output --
+
+Tue Feb 25 16:37:19 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   47Gi  185Gi    21% 12436974 48402768   20%   /
+/dev/disk1s2  200Mi  190Mi   10Mi    96%    48631     2557   95%   /Volumes/Aquamacs Emacs
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                          9699     0     9699     0     0
+lo0   16384 localhost   ::1                   9699     -     9699     -     -
+lo0   16384 127           localhost           9699     -     9699     -     -
+lo0   16384 localhost   fe80:1::1             9699     -     9699     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88   412691     0   290422     0     0
+en1   1500  sreejiths-m fe80:5::f2b4:79ff   412691     -   290422     -     -
+en1   1500  192.168.1     192.168.1.15      412691     -   290422     -     -
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0  2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+
+Local system status:
+16:37  up 1 day,  5:55, 5 users, load averages: 1.49 1.77 1.73
+
+-- End of daily output --
+
+Wed Feb 26 15:25:12 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   47Gi  184Gi    21% 12479247 48360495   21%   /
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                          8300     0     8300     0     0
+lo0   16384 localhost   ::1                   8300     -     8300     -     -
+lo0   16384 127           localhost           8300     -     8300     -     -
+lo0   16384 localhost   fe80:1::1             8300     -     8300     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88   119305     0    92086     0     0
+en1   1500  sreejiths-m fe80:5::f2b4:79ff   119305     -    92086     -     -
+en1   1500  192.168.1     192.168.1.15      119305     -    92086     -     -
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0  2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+
+Local system status:
+15:25  up  3:58, 3 users, load averages: 1.31 3.87 3.44
+
+-- End of daily output --
+
+Thu Feb 27 11:17:57 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   48Gi  184Gi    21% 12651132 48188610   21%   /
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                         22236     0    22236     0     0
+lo0   16384 localhost   ::1                  22236     -    22236     -     -
+lo0   16384 127           localhost          22236     -    22236     -     -
+lo0   16384 localhost   fe80:1::1            22236     -    22236     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88   752440     0   642468     0     0
+en1   1500  sreejiths-m fe80:5::f2b4:79ff   752440     -   642468     -     -
+en1   1500  192.168.1     192.168.1.15      752440     -   642468     -     -
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0  2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+
+Local system status:
+11:17  up 23:51, 2 users, load averages: 1.09 1.04 1.22
+
+-- End of daily output --
+
+Fri Feb 28 12:09:36 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   48Gi  184Gi    21% 12684317 48155425   21%   /
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                         37636     0    37636     0     0
+lo0   16384 localhost   ::1                  37636     -    37636     -     -
+lo0   16384 127           localhost          37636     -    37636     -     -
+lo0   16384 localhost   fe80:1::1            37636     -    37636     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88  2041465     0  1981726     0     0
+en1   1500  sreejiths-m fe80:5::f2b4:79ff  2041465     -  1981726     -     -
+en1   1500  192.168.1     192.168.1.15     2041465     -  1981726     -     -
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0  2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+
+Local system status:
+12:09  up 2 days, 42 mins, 2 users, load averages: 1.16 1.19 1.23
+
+-- End of daily output --
+
+Sat Mar  1 16:14:42 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem       Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2    232Gi   53Gi  179Gi    23% 13833936 47005806   23%   /
+/dev/disk1s0s2   53Mi   53Mi    0Bi   100%    13580        0  100%   /Volumes/Airtel
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                          3693     0     3693     0     0
+lo0   16384 localhost   ::1                   3693     -     3693     -     -
+lo0   16384 127           localhost           3693     -     3693     -     -
+lo0   16384 localhost   fe80:1::1             3693     -     3693     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88        0     0        0     0     0
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0* 2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+en3   1500  <Link#8>    34:4b:50:b7:ef:4a    19011     0    14188     0     0
+en3   1500  sreejiths-m fe80:8::364b:50ff    19011     -    14188     -     -
+en3   1500  192.168.0     sreejiths-mbp      19011     -    14188     -     -
+
+Local system status:
+16:14  up 15:26, 1 user, load averages: 1.15 1.38 1.35
+
+-- End of daily output --
+
+Sun Mar  2 12:50:37 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   53Gi  179Gi    23% 13886934 46952808   23%   /
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                          7514     0     7514     0     0
+lo0   16384 localhost   ::1                   7514     -     7514     -     -
+lo0   16384 127           localhost           7514     -     7514     -     -
+lo0   16384 localhost   fe80:1::1             7514     -     7514     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88    42483     0    57848     0     0
+en1   1500  169.254       sreejiths-macbo    42483     -    57848     -     -
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0* 2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+en3   1500  <Link#8>    34:4b:50:b7:ef:4a    69488     0    54600     0     0
+en3   1500  sreejiths-m fe80:8::364b:50ff    69488     -    54600     -     -
+en3   1500  192.168.0     sreejiths-mbp      69488     -    54600     -     -
+bridg 1500  <Link#9>    5a:b0:35:2f:b2:64    42554     0   115522     0     0
+bridg 1500  192.168.2     192.168.2.1        42554     -   115522     -     -
+
+Local system status:
+12:50  up 1 day, 12:02, 1 user, load averages: 1.06 1.45 2.45
+
+-- End of daily output --
+
+Mon Mar  3 16:10:17 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   53Gi  179Gi    23% 13921153 46918589   23%   /
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                         20416     0    20416     0     0
+lo0   16384 localhost   ::1                  20416     -    20416     -     -
+lo0   16384 127           localhost          20416     -    20416     -     -
+lo0   16384 localhost   fe80:1::1            20416     -    20416     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88   338347     0   308367     0     0
+en1   1500  sreejiths-m fe80:5::f2b4:79ff   338347     -   308367     -     -
+en1   1500  192.168.1     192.168.1.15      338347     -   308367     -     -
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0  2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+
+Local system status:
+16:10  up 2 days, 15:22, 3 users, load averages: 1.38 1.31 1.37
+
+-- End of daily output --
+
+Tue Mar  4 16:55:41 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   57Gi  175Gi    25% 14993393 45846349   25%   /
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                         35940     0    35940     0     0
+lo0   16384 localhost   ::1                  35940     -    35940     -     -
+lo0   16384 127           localhost          35940     -    35940     -     -
+lo0   16384 localhost   fe80:1::1            35940     -    35940     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88  2318918     0  2091153     0     0
+en1   1500  sreejiths-m fe80:5::f2b4:79ff  2318918     -  2091153     -     -
+en1   1500  192.168.1     192.168.1.15     2318918     -  2091153     -     -
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0  2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+
+Local system status:
+16:55  up 3 days, 16:07, 2 users, load averages: 1.36 1.44 1.51
+
+-- End of daily output --
+
+Wed Mar  5 19:04:07 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   59Gi  173Gi    26% 15503102 45336640   25%   /
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                         56475     0    56475     0     0
+lo0   16384 localhost   ::1                  56475     -    56475     -     -
+lo0   16384 127           localhost          56475     -    56475     -     -
+lo0   16384 localhost   fe80:1::1            56475     -    56475     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88  4885899     0  4162973     0     0
+en1   1500  sreejiths-m fe80:5::f2b4:79ff  4885899     -  4162973     -     -
+en1   1500  192.168.1     192.168.1.15     4885899     -  4162973     -     -
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0  2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+
+Local system status:
+19:04  up 4 days, 18:16, 3 users, load averages: 1.42 1.40 1.26
+
+-- End of daily output --
+
+Thu Mar  6 13:51:21 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   59Gi  173Gi    26% 15548788 45290954   26%   /
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                         64565     0    64565     0     0
+lo0   16384 localhost   ::1                  64565     -    64565     -     -
+lo0   16384 127           localhost          64565     -    64565     -     -
+lo0   16384 localhost   fe80:1::1            64565     -    64565     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88  4950302     0  4228183     0     0
+en1   1500  sreejiths-m fe80:5::f2b4:79ff  4950302     -  4228183     -     -
+en1   1500  192.168.1     192.168.1.15     4950302     -  4228183     -     -
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0  2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+
+Local system status:
+13:51  up 5 days, 13:03, 2 users, load averages: 1.08 1.13 1.13
+
+-- End of daily output --
+
+Fri Mar  7 18:49:51 IST 2014
+
+Removing old temporary files:
+  /tmp/.CrossOver2-lock
+  /tmp/.wine-501/server-1000002-1a74d3/lock
+  /tmp/.wine-501/server-1000002-1a7845/lock
+  /tmp/.wine-501/server-1000002-1a7f04/lock
+  /tmp/.wine-501/server-1000002-1b34eb/lock
+  /tmp/.wine-501/server-1000002-1ba1db/lock
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   62Gi  170Gi    27% 16272088 44567654   27%   /
+/dev/disk1s2  148Mi  148Mi    0Bi   100%    75937        0  100%   /Volumes/Google Chrome
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                         89191     0    89191     0     0
+lo0   16384 localhost   ::1                  89191     -    89191     -     -
+lo0   16384 127           localhost          89191     -    89191     -     -
+lo0   16384 localhost   fe80:1::1            89191     -    89191     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88  7566290     0  6217788     0     0
+en1   1500  sreejiths-m fe80:5::f2b4:79ff  7566290     -  6217788     -     -
+en1   1500  192.168.1     192.168.1.15     7566290     -  6217788     -     -
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0  2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+
+Local system status:
+18:49  up 6 days, 18:01, 2 users, load averages: 1.63 1.41 1.57
+
+-- End of daily output --
+
+Sat Mar  8 23:00:37 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   60Gi  172Gi    26% 15852455 44987287   26%   /
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                           498     0      498     0     0
+lo0   16384 localhost   ::1                    498     -      498     -     -
+lo0   16384 127           localhost            498     -      498     -     -
+lo0   16384 sreejiths-m fe80:1::1              498     -      498     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88     2405     0     2770     0     0
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0* 2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+
+Local system status:
+23:00  up 4 hrs, 2 users, load averages: 1.30 1.64 1.95
+
+-- End of daily output --
+
+Mon Mar 10 00:06:40 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   60Gi  172Gi    27% 15878956 44960786   26%   /
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                          2248     0     2248     0     0
+lo0   16384 localhost   ::1                   2248     -     2248     -     -
+lo0   16384 127           localhost           2248     -     2248     -     -
+lo0   16384 sreejiths-m fe80:1::1             2248     -     2248     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88    26759     0    26011     0     0
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0  2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+
+Local system status:
+ 0:06  up 11:16, 3 users, load averages: 1.01 1.02 1.04
+
+-- End of daily output --
+
+Tue Mar 11 08:46:48 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   63Gi  169Gi    28% 16666195 44173547   27%   /
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                         26917     0    26917     0     0
+lo0   16384 localhost   ::1                  26917     -    26917     -     -
+lo0   16384 127           localhost          26917     -    26917     -     -
+lo0   16384 sreejiths-m fe80:1::1            26917     -    26917     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88  1609766     0  1733214     0     0
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0* 2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+
+Local system status:
+ 8:46  up 1 day, 19:56, 1 user, load averages: 29.47 9.85 4.56
+
+-- End of daily output --
+
+Wed Mar 12 10:13:27 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   69Gi  162Gi    30% 18257110 42582632   30%   /
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                         59174     0    59174     0     0
+lo0   16384 localhost   ::1                  59174     -    59174     -     -
+lo0   16384 127           localhost          59174     -    59174     -     -
+lo0   16384 localhost   fe80:1::1            59174     -    59174     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88  5720833     0  4962446     0     0
+en1   1500  sreejiths-m fe80:5::f2b4:79ff  5720833     -  4962446     -     -
+en1   1500  192.168.1     192.168.1.15     5720833     -  4962446     -     -
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0  2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+
+Local system status:
+10:13  up 2 days, 21:23, 2 users, load averages: 84.88 21.57 8.56
+
+-- End of daily output --
+
+Thu Mar 13 10:32:24 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   71Gi  161Gi    31% 18550103 42289639   30%   /
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                         80487     0    80487     0     0
+lo0   16384 localhost   ::1                  80487     -    80487     -     -
+lo0   16384 127           localhost          80487     -    80487     -     -
+lo0   16384 localhost   fe80:1::1            80487     -    80487     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88  7143467     0  6093829     0     0
+en1   1500  sreejiths-m fe80:5::f2b4:79ff  7143467     -  6093829     -     -
+en1   1500  192.168.1     192.168.1.15     7143467     -  6093829     -     -
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0  2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+
+Local system status:
+10:32  up 3 days, 21:42, 3 users, load averages: 10.48 6.24 3.35
+
+-- End of daily output --
+
+Fri Mar 14 10:11:58 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   68Gi  164Gi    30% 17940301 42899441   29%   /
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                          1223     0     1223     0     0
+lo0   16384 localhost   ::1                   1223     -     1223     -     -
+lo0   16384 127           localhost           1223     -     1223     -     -
+lo0   16384 sreejiths-m fe80:1::1             1223     -     1223     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88     2294     0     2515     0     0
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0* 2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+
+Local system status:
+10:12  up 14:40, 1 user, load averages: 1.05 1.23 1.91
+
+-- End of daily output --
+
+Sat Mar 15 15:10:27 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem       Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2    232Gi   72Gi  160Gi    31% 18891892 41947850   31%   /
+/dev/disk1s0s2   53Mi   53Mi    0Bi   100%    13580        0  100%   /Volumes/Airtel
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                         41272     0    41272     0     0
+lo0   16384 localhost   ::1                  41272     -    41272     -     -
+lo0   16384 127           localhost          41272     -    41272     -     -
+lo0   16384 localhost   fe80:1::1            41272     -    41272     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88  4848576     0  4251238     0     0
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0* 2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+en3   1500  <Link#8>    34:4b:50:b7:ef:4a       54     0       95     0     0
+en3   1500  sreejiths-m fe80:8::364b:50ff       54     -       95     -     -
+en3   1500  192.168.0     sreejiths-mbp         54     -       95     -     -
+
+Local system status:
+15:10  up 1 day, 19:38, 2 users, load averages: 3.22 8.06 5.10
+
+-- End of daily output --
+
+Sun Mar 16 19:28:56 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   73Gi  159Gi    32% 19139843 41699899   31%   /
+/dev/disk2s3  556Mi  482Mi   74Mi    87%   123390    18938   87%   /Volumes/iWork '09 Trial Install DVD
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                           748     0      748     0     0
+lo0   16384 localhost   ::1                    748     -      748     -     -
+lo0   16384 127           localhost            748     -      748     -     -
+lo0   16384 localhost   fe80:1::1              748     -      748     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88        0     0        0     0     0
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0* 2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+en3   1500  <Link#8>    34:4b:50:b7:ef:4a    45057     0    40714     0     0
+en3   1500  sreejiths-m fe80:8::364b:50ff    45057     -    40714     -     -
+en3   1500  192.168.0     192.168.0.144      45057     -    40714     -     -
+
+Local system status:
+19:28  up  5:18, 3 users, load averages: 1.13 1.31 1.64
+
+-- End of daily output --
+
+Mon Mar 17 23:08:45 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem       Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2    232Gi   72Gi  160Gi    32% 19018706 41821036   31%   /
+/dev/disk1s0s2   53Mi   53Mi    0Bi   100%    13580        0  100%   /Volumes/Airtel
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                          2600     0     2600     0     0
+lo0   16384 localhost   ::1                   2600     -     2600     -     -
+lo0   16384 127           localhost           2600     -     2600     -     -
+lo0   16384 localhost   fe80:1::1             2600     -     2600     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88   163051     0    76683     0     0
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0* 2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+en3   1500  <Link#8>    34:4b:50:b7:ef:4a    14715     0    14624     0     0
+en3   1500  sreejiths-m fe80:8::364b:50ff    14715     -    14624     -     -
+en3   1500  192.168.0     192.168.0.144      14715     -    14624     -     -
+
+Local system status:
+23:08  up 1 day,  8:58, 3 users, load averages: 1.37 3.26 5.53
+
+-- End of daily output --
+
+Tue Mar 18 23:46:08 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem       Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2    232Gi   72Gi  160Gi    31% 18899370 41940372   31%   /
+/dev/disk1s0s2   53Mi   53Mi    0Bi   100%    13580        0  100%   /Volumes/Airtel
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                         14698     0    14698     0     0
+lo0   16384 localhost   ::1                  14698     -    14698     -     -
+lo0   16384 127           localhost          14698     -    14698     -     -
+lo0   16384 localhost   fe80:1::1            14698     -    14698     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88  2253876     0  1897215     0     0
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0* 2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+en3   1500  <Link#8>    34:4b:50:b7:ef:4a     2048     0     2189     0     0
+en3   1500  sreejiths-m fe80:8::364b:50ff     2048     -     2189     -     -
+en3   1500  192.168.0     192.168.0.144       2048     -     2189     -     -
+
+Local system status:
+23:46  up 2 days,  9:35, 1 user, load averages: 2.17 1.66 1.47
+
+-- End of daily output --
+
+Thu Mar 20 00:11:47 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem       Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2    232Gi   79Gi  153Gi    35% 20852131 39987611   34%   /
+/dev/disk1s0s2   53Mi   53Mi    0Bi   100%    13580        0  100%   /Volumes/Airtel
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                         73506     0    73506     0     0
+lo0   16384 localhost   ::1                  73506     -    73506     -     -
+lo0   16384 127           localhost          73506     -    73506     -     -
+lo0   16384 localhost   fe80:1::1            73506     -    73506     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88  4078301     0  3508361     0     0
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0* 2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+en3   1500  <Link#8>    34:4b:50:b7:ef:4a   309935     0   243595     0     0
+en3   1500  sreejiths-m fe80:8::364b:50ff   309935     -   243595     -     -
+en3   1500  192.168.0     192.168.0.144     309935     -   243595     -     -
+
+Local system status:
+ 0:11  up 3 days, 10:01, 1 user, load averages: 3.11 2.22 2.40
+
+-- End of daily output --
+
+Fri Mar 21 10:10:44 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   79Gi  153Gi    34% 20722304 40117438   34%   /
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                         30780     0    30780     0     0
+lo0   16384 localhost   ::1                  30780     -    30780     -     -
+lo0   16384 127           localhost          30780     -    30780     -     -
+lo0   16384 sreejiths-m fe80:1::1            30780     -    30780     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88  1127409     0  1160582     0     0
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0* 2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+
+Local system status:
+10:10  up 23:01, 1 user, load averages: 44.54 11.55 5.13
+
+-- End of daily output --
+
+Sat Mar 22 16:30:36 IST 2014
+
+Removing old temporary files:
+
+Cleaning out old system announcements:
+
+Removing stale files from /var/rwho:
+
+Removing scratch fax files
+
+Disk status:
+Filesystem     Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk0s2  232Gi   95Gi  137Gi    42% 25000775 35838967   41%   /
+
+Network interface status:
+Name  Mtu   Network       Address            Ipkts Ierrs    Opkts Oerrs  Coll
+lo0   16384 <Link#1>                         53841     0    53841     0     0
+lo0   16384 localhost   ::1                  53841     -    53841     -     -
+lo0   16384 127           localhost          53841     -    53841     -     -
+lo0   16384 sreejiths-m fe80:1::1            53841     -    53841     -     -
+gif0* 1280  <Link#2>                             0     0        0     0     0
+stf0* 1280  <Link#3>                             0     0        0     0     0
+en0   1500  <Link#4>    58:b0:35:f2:2f:40        0     0        0     0     0
+en1   1500  <Link#5>    f0:b4:79:23:4d:88  1235149     0  1019880     0     0
+fw0   4078  <Link#6>    d8:30:62:ff:fe:f1:70:5e        0     0        0     0     0
+p2p0  2304  <Link#7>    02:b4:79:23:4d:88        0     0        0     0     0
+
+Local system status:
+16:30  up 22:20, 1 user, load averages: 1.76 1.59 1.54
+
+-- End of daily output --

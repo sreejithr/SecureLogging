@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Settings</title>
+<link rel='stylesheet' type='text/css' href='{{ url_for("static", filename="styles/settings.css") }}'/>
+<script type='text/javascript' href='{{ url_for("static", filename="scripts/jquery-1.11.0.js") }}'></script>
+</head>
+
+<body>
+<div class='container'>
+<div id='main_heading'>
+	<h1>Settings
+	{% if saved == True %}
+		<span id='post_save_success'>✔</span>
+	{% elif saved == False %}
+		<span id='post_save_failure'>x</span>
+	{% endif %}</h1>
+</div>
+<h3 id='back_button_box'><a href='http://localhost:5000/'><- Back</a></h3>
+{% if error_message %}
+	<div id='error_message'>{{ error_message }}</div>
+{% endif %}
+<div id='general_settings'>
+<form method='POST' action='http://localhost:5000/settings'>
+	<h3 class='section_header'>General Settings</h3>
+	<div class='each_setting'>
+		<div class='setting_name_description'>
+			<p class='setting_name'>Paths to Sync</p>
+			<p class='setting_description'>Separate different paths with comma (,)</p>
+		</div>
+		<textarea name='paths'>{{ paths }}</textarea>
+	</div>
+	<div class='each_setting'>
+		<div class='setting_name_description'>
+			<p class='setting_name'>Server Port</p>
+			<p class='setting_description'>Server will listen on this port</p>
+		</div>
+		<input name='server_port' type='text' value='{{ server_port }}'>
+	</div>
+	<div class='each_setting'>
+		<div class='setting_name_description'>
+			<p class='setting_name'>Client IP</p>
+			<p class='setting_description'>IP of client machine</p>
+		</div>
+		<input name='client_ip' type='text' value='{{ client_ip }}'>
+	</div>
+	<div class='each_setting'>
+		<div class='setting_name_description'>
+			<p class='setting_name'>Client Username</p>
+			<p class='setting_description'>Username in client machine</p>
+		</div>
+		<input name='client_username' type='text' value='{{ client_username }}'>
+	</div>
+	<div class='each_setting'>
+		<div class='setting_name_description'>
+			<p class='setting_name'>Log Collection Timing</p>
+			<p class='setting_description'>The logs are synced every such timing</p>
+		</div>
+		<input name='log_collection_timing' type='text' value='{{ log_collection_timing }}'>
+	</div>
+	<div class='each_setting'>
+		<div class='setting_name_description'>
+			<p class='setting_name'>Heartbeat Timing</p>
+			<p class='setting_description'>Client machines send heartbeats at this timing</p>
+		</div>
+		<input name='heartbeat_timing' type='text' value='{{ heartbeat_timing }}'>
+	</div>
+	<div id='submit_section'>
+		<input type='submit' id='submit_button'>
+	</div>
+</form>
+</div>
+</div>
+</body>
+</html>

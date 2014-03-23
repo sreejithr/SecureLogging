@@ -14,7 +14,7 @@ class ControlSignalReceiver:
     def __call__(self, host='localhost', port='5555'):
         # Initialize the socket
         self.sock = socket.socket()
-        self.sock.bind((host, port))
+        self.sock.bind((host, int(port)))
 
         # Start listening
         self.sock.listen(5)
@@ -58,6 +58,8 @@ class ControlSignalReceiver:
 
             # Store the paths in the DB
             storage.set_paths(target_table, client, paths)
+
+            print "Path database synced from server"
         except KeyError:
             print "Sync path database update from server failed"
 

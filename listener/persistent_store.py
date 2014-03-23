@@ -9,7 +9,7 @@ class PersistentStore:
         self._database_check_required = False
 
     def get_paths(self, tracked_files_db, client):
-        paths = list(self._cursor.execute('select paths from {} where ip={}'
+        paths = list(self._cursor.execute('select paths from {} where ip="{}"'
                                           .format(tracked_files_db, client)))
         if len(paths) == 1:
             try:

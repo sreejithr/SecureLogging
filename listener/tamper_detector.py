@@ -1,28 +1,23 @@
 import os
 
 from difflib import Differ
+from settings import SNAPSHOT_PREFIX
 
 
 class TamperDetector:
     """
     This will monitor periodically if the files which are being monitored are being
-    tampered with. It will remember the last line till where it has already finished
-    checking for tampering and check for tampering in the forecoming lines.
+    tampered with. It will remember the last line till where it has already
+    finished checking for tampering and check for tampering in the forecoming
+    lines.
 
-    If the line cannot be found at all (or portion of the line), it is automatically
-    felt as tampered.
+    If the line cannot be found at all (or portion of the line), it is
+    automatically declared as tampered.
     """
-    def __init__(self, list_of_files):
+    def __init__(self):
         self._differ = Differ()
-        self._list_of_files = list_of_files
 
-    def tamper_detect(self):
-        for path in self._list_of_files:
-            if _is_tampered(path, os.path.join(SNAPSHOT_PREFIX, path)):
-                return True        
-        return False
-
-    def _is_tampered(self, path, older_version_path):
+    def tamper_detect(self, older_version_path, path):
         current = open(path).readlines()
         snapshot = open(older_version_path).readlines()
 
@@ -30,5 +25,13 @@ class TamperDetector:
         for line in self._differ.compare(current, snapshot):
             plus_minus.append(line[0])
 
-        return self._is_valid(plus_minus)
+        return self._is_tampered(plus_minus, len(snapshot))
+
+    def _is_tampered(self, plus_minus, no_of_lines_in_snapshot):
+        try:
+            if plus_minus.index('-') < no_of_lines_in_snapshot:
+                return True
+        except ValueError:
+            pass
+        return False
 

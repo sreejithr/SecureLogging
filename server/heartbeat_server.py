@@ -21,7 +21,7 @@ class HeartbeatServer:
         self._sock = socket.socket()
         self._sock.bind((self._host, self._port))
         
-    def __call__(self):
+    def serve(self):
         # Start listening
         self._sock.listen(5)
 
@@ -56,11 +56,13 @@ class HeartbeatServer:
             if self._last_heartbeat_time:
                 if (time.clock() - self._last_heartbeat_time) > \
                   self._check_interval + tolerance:
-                  # TODO: Change this to a handler
                     print "Client dead"
+                    with open('heartbeat_record.record', 'a') as f:
+                        f.write('{} - CLIENT DEAD'.format(time.clock()))
             time.sleep(self._check_interval)
 
 if __name__ == '__main__':
-    heartbeat_server = HeartbeatServer('localhost', 5656, 5, 5)
-    heartbeat_server()
+    heartbeat_server = HeartbeatServer('localhost', 5656, heartbeat_interval=5,
+                                       check_interval=5)
+    heartbeat_server.serve()
     

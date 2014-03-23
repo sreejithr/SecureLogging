@@ -1,4 +1,5 @@
 import os
+import time
 import threading
 import socket
 
@@ -25,7 +26,8 @@ class HeartbeatSender:
         except ValueError:
             time_period = 300
 
-        timer_task = threading.Timer(time_period, self._send_heartbeat, [time_period])
+        timer_task = threading.Timer(time_period, self._send_heartbeat,
+                                         [time_period])
         # When the main program (main process) exits, we also want this thread
         # to exit. Otherwise, it will still keep sending heartbeats to the server
         # which gives a false impression to the server that the listener process
@@ -46,7 +48,7 @@ class HeartbeatSender:
         self.sock.close()
 
 if __name__ == '__main__':
-    heart_beat_sender = HeartBeatSender(TARGET_HOST, TARGET_PORT)
+    heart_beat_sender = HeartBeatSender(SERVER_HOST, SERVER_PORT)
     # TODO Remove hardcoding of time-period
     heart_beat.sender(5)
 

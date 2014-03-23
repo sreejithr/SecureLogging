@@ -5,7 +5,7 @@ from inside python.
 import subprocess
 
 
-def rsync_logs(target_username, target_ip, target_path):
+def rsync_logs(target_username, target_ip, target_paths):
     """
     This function sends the contents of the PATH specified to the TARGET path
     via rsync.
@@ -20,8 +20,9 @@ def rsync_logs(target_username, target_ip, target_path):
     #     rsync -rave "ssh -l <TARGET-USERNAME>" --delete <SOURCE> <TARGET>
     #
     try:
-        subprocess.call(["rsync", "-rave", "ssh -l " + target_username,
-                         "--delete", target_path, target_ip])
+        for path in target_paths:
+            subprocess.call(["rsync", "-rave", "ssh -l " + target_username,
+                            "--delete", path, target_ip])
     except:
         return False
     return True

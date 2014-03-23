@@ -9,7 +9,7 @@ CLIENT_NAME = 'localhost'
 TARGET_HOST = '' # TODO
 TARGET_PORT = '' # TODO
 HEARTBEAT_TIMING = 5
-SNAPSHOT_PREFIX = os.path.realpath('SNAPSHOT')
+SNAPSHOT_PREFIX = '/Users/sreejith/Code/secure_logging/listener/SNAPSHOT'
 
 # For server
 SERVER_HOST = 'localhost'

@@ -6,100 +6,108 @@ the remote server.
 If tampering has been detected, it should alert the remote server first and send
 the diff/file as a whole.
 """
+import os
 import sys
 import time
 import socket
 import threading
+import subprocess
 
 from watchdog.observers import Observer
-from difflib import ndiff
+from watchdog.events import FileSystemEventHandler
+from tamper_detector import TamperDetector
+from persistent_store import PersistentStore
+from settings import (SNAPSHOT_PREFIX, DATABASE_NAME, FILES_TABLE_NAME, CLIENT_NAME)
 
 PATH = "/Users/sreejith/pics"
 TARGET = "digitalocean:/home/sreejith/pics"
 
+CHANGE_COUNT = 0
+NO_OF_CHANGES_FOR_SNAPSHOTTING = 1
 
-class FileChangeHandler:
+
+def make_snapshots():
+    """
+    Makes copy of the files for doing diffs on
+    """
+    list_of_paths = PersistentStore(DATABASE_NAME).get_paths(FILES_TABLE_NAME,
+                                                             CLIENT_NAME)
+    for path in list_of_paths:
+        path_backslash_removed = path[1:] if path[0] == '/' else path
+        if os.path.isdir(path):
+            target_path = os.path.join(SNAPSHOT_PREFIX,
+                                       os.path.split(path_backslash_removed)[0])
+        else:
+            target_path = os.path.join(SNAPSHOT_PREFIX, path_backslash_removed)
+
+        if not os.path.exists(target_path):
+            subprocess.call(['mkdir','-p', target_path])
+
+        subprocess.call(['cp', '-r', path, target_path])
+
+
+class FileChangeEventHandler(FileSystemEventHandler):
+    def on_any_event(self, event):
+        tamper_detector = TamperDetector()
+        path = event.src_path
+        print "Change detected"
+
+#        if path == '/var/log/system.log':
+        import ipdb; ipdb.set_trace()
+        self.all_files = []
+        if os.path.isdir(path):
+            self.get_filenames(path, save_to=self.all_files)
+
+        try:
+            target_path = os.path.join(SNAPSHOT_PREFIX, path[1:]
+                                       if path[0] == '/' else path)
+            if self.all_files:
+                for file_name in self.all_files:
+                    if tamper_detector.tamper_detect(target_path, file_name):
+                        print "Tampered"
+                    else:
+                        make_snapshots()
+            else:
+                if tamper_detector.tamper_detect(target_path, path):
+                    print "Tampered"
+                else:
+                    make_snapshots()
+        except IOError:
+            pass
+
+    def get_filenames(self, path, save_to):
+        for each, _, files in os.walk(path):
+            for file_name in files:
+                self.all_files.append(os.path.join(each, file_name))
+
+
+class FileTracker:
     """
     It will monitor changes to the file.
     """
-    def __call__(self):
-        """
-        On call, it should perform tamper-detection, and pass it onto the
-        CommunicationHandler
-        """
-        pass
+    def __init__(self, list_of_files):
+        self._list_of_files = list_of_files
 
-
-class HeartbeatSender:
-
-    def __init__(self, target_host, target_port):
-        self._target_host = target_host
-        self._target_port = target_port
-
-    def start_heartbeat_sending(self, time_period=300):
-        """
-        It starts a timer for the given 'time_period' (in seconds) and executes
-        the _log_send() function every time period (say, 300s = 5min).
-
-        :param time_period: _log_send() is executed every 'time_period' seconds
-        :type time_period: int
-        """
-        # We're just making sure time_period is an int by explicitly converting
-        # it to int. If it is something like 'abc' which is not an int, a
-        # ValueError will occur. In that case, we set the time to 300sec manually.
-        try:
-            time_period = int(time_period)
-        except ValueError:
-            time_period = 300
-
-        timer_task = threading.Timer(time_period, self._send_heartbeat, [time_period])
-        # When the main program (main process) exits, we also want this thread
-        # to exit. Otherwise, it will still keep sending heartbeats to the server
-        # which gives a false impression to the server that the listener process
-        # is still alive.
-        timer_task.daemon = True
-        # Start timer
-        timer_task.start()
-
-    def _send_heartbeat(self, time_period):
-        """
-        Sends a simple "beat" string to the specified target
-        """
-        self.sock = socket.socket()
-        self.sock.connect((self._target_host, int(self._target_port)))        
+    def start_observing(self):
+        observer = Observer()
+        filechange_event_handler = FileChangeEventHandler()
+        make_snapshots()
+        for path in self._list_of_files:
+            observer.schedule(filechange_event_handler, path, recursive=True)
+        observer.start()
         while True:
-            self.sock.send("beat")
-            print "hey"
-            time.sleep(time_period)
-        self.sock.close()
+            time.sleep(1)
+        observer.stop()
+        observer.join()
 
-
-class DiffExtractor:
-    """
-    This will make a diff of the file when a change is detected.
-    """
-    def _extract_diff(self):
-        """
-        Extracts diff
-        """
+    def _alert_server(self):
+        # TODO
         pass
+
 
 if __name__ == '__main__':
-    heartbeat_sender = HeartbeatSender('localhost', 5656)
-    heartbeat_sender.start_heartbeat_sending(5)
-
     while True:
         time.sleep(1)
 #    path = sys.argv[1] if len(sys.argv[1] > 1) else '.'
 #    file_change_handler = FileChangeHandler()
-
-#    observer = Observer()
-#    observer.schedule(event_handler, path, recursive=True)
-#    observer.start()
-
-#    try:
-#        time.sleep(1)
-#    except KeyboardInterrupt:
-#        observer.stop()
-#    observer.join()
 

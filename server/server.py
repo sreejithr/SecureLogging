@@ -10,6 +10,7 @@ from settings import (DATABASE_NAME, FILES_TABLE_NAME, CLIENTS_TABLE_NAME,
                       CRITICAL_SETTINGS_FILE, RSYNC_BASE_DIR, CLIENT_NAME,
                       CONTROL_SIGNAL_RECEIVER_PORT)
 from persistent_store import PersistentStore, set_critical_settings
+from werkzeug.contrib.fixers import ProxyFix
 
 app = Flask(__name__)
 app.debug = True
@@ -99,6 +100,7 @@ def settings():
     values_to_ui['saved'] = None
     return render_template('settings.html', **values_to_ui)
 
+app.wsgi_app = ProxyFix(app.wsgi_app)
     
 if __name__ == '__main__':
    app.run()

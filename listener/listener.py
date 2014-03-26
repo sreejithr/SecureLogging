@@ -52,8 +52,6 @@ class FileChangeEventHandler(FileSystemEventHandler):
         path = event.src_path
         print "Change detected"
 
-#        if path == '/var/log/system.log':
-        import ipdb; ipdb.set_trace()
         self.all_files = []
         if os.path.isdir(path):
             self.get_filenames(path, save_to=self.all_files)
@@ -91,6 +89,7 @@ class FileTracker:
     def start_observing(self):
         observer = Observer()
         filechange_event_handler = FileChangeEventHandler()
+
         make_snapshots()
         for path in self._list_of_files:
             observer.schedule(filechange_event_handler, path, recursive=True)

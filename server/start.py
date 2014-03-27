@@ -6,8 +6,8 @@ import sqlite3
 from heartbeat_server import HeartbeatServer
 from log_collector import LogCollector
 from user_settings import (SERVER_PORT, LOG_COLLECT_INTERVAL, HEARTBEAT_TIMING)
-from settings import (SERVER_HOST, HEARTBEAT_INTERVAL, CHECK_INTERVAL,
-                      DATABASE_NAME, CLIENTS_TABLE_NAME, FILES_TABLE_NAME)
+from settings import (SERVER_HOST, CHECK_INTERVAL, DATABASE_NAME,
+                      CLIENTS_TABLE_NAME, FILES_TABLE_NAME)
 
 def start_log_collection():
     db = sqlite3.connect(DATABASE_NAME)
@@ -28,7 +28,7 @@ def start_log_collection():
 if __name__ == '__main__':
     try:
         heartbeat_server = HeartbeatServer('localhost', int(SERVER_PORT),
-                                           HEARTBEAT_INTERVAL, CHECK_INTERVAL)
+                                           HEARTBEAT_TIMING, CHECK_INTERVAL)
     except ValueError:
         print "Check if settings are valid"
 

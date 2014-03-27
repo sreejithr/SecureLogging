@@ -47,7 +47,7 @@ def make_snapshots():
 
 
 class FileChangeEventHandler(FileSystemEventHandler):
-    def on_any_event(self, event):
+    def on_modified(self, event):
         tamper_detector = TamperDetector()
         path = event.src_path
         print "Change detected"
@@ -55,7 +55,7 @@ class FileChangeEventHandler(FileSystemEventHandler):
         self.all_files = []
         if os.path.isdir(path):
             self.get_filenames(path, save_to=self.all_files)
-
+        import ipdb; ipdb.set_trace()
         try:
             target_path = os.path.join(SNAPSHOT_PREFIX, path[1:]
                                        if path[0] == '/' else path)
@@ -63,15 +63,18 @@ class FileChangeEventHandler(FileSystemEventHandler):
                 for file_name in self.all_files:
                     if tamper_detector.tamper_detect(target_path, file_name):
                         print "Tampered"
-                    else:
-                        make_snapshots()
+                        subprocess.call(['mv', '-r', target_path,
+                                         target_path + str(time.time())])
             else:
                 if tamper_detector.tamper_detect(target_path, path):
                     print "Tampered"
-                else:
-                    make_snapshots()
+                    snapshot_path = os.path.split(target_path)[0]
+                    subprocess.call(['mv', '-r',
+                                     snapshot_path,
+                                     snapshot_path + str(time.time())])
+            make_snapshots()
         except IOError:
-            pass
+            print "IOError occured. Ignored"
 
     def get_filenames(self, path, save_to):
         for each, _, files in os.walk(path):

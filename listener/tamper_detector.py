@@ -28,6 +28,8 @@ class TamperDetector:
         return self._is_tampered(plus_minus, len(snapshot))
 
     def _is_tampered(self, plus_minus, no_of_lines_in_snapshot):
+        """
+        """
         try:
             if plus_minus.index('-') < no_of_lines_in_snapshot:
                 return True

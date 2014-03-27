@@ -4,6 +4,7 @@
 <link rel='stylesheet' type='text/css' href='{{ url_for("static", filename="styles/landing.css") }}'/>
 <script src="{{ url_for('static', filename='scripts/jquery-1.11.0.js') }}"></script>
 <script src="{{ url_for('static', filename='scripts/jquery-ui-1.10.4.custom.js') }}"></script>
+<script src="{{ url_for('static', filename='scripts/jqueryFileTree/jqueryFileTree.js') }}"></script>
 <script>
 function get_heartbeat() {
 	$.ajax({
@@ -16,6 +17,14 @@ function get_heartbeat() {
     		},
     	});
 }
+
+$(document).ready(
+    function() {
+        $('#filesystem').fileTree({ root: '/Users/sreejith/a/' }, function(file) {
+            alert(file);
+        });
+});
+
 </script>
 </head>
 
@@ -44,9 +53,6 @@ function get_heartbeat() {
 	 		setInterval(get_heartbeat, parseInt('{{ heartbeat_timing }}') * 1000);
 	 	</script>
 	 	<div id="beacon"><h1>Heartbeat received</h1></div>
-    </div>
-
-    <div id='stats'>
     </div>
 
     <div id='filesystem'>

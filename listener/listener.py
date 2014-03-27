@@ -51,11 +51,11 @@ class FileChangeEventHandler(FileSystemEventHandler):
         tamper_detector = TamperDetector()
         path = event.src_path
         print "Change detected in {}".format(path)
-
+        
         self.all_files = []
         if os.path.isdir(path):
-            self.get_filenames(path, save_to=self.all_files)
-        import ipdb; ipdb.set_trace()
+            self.all_files = self.get_filenames(path)
+
         try:
             target_path = os.path.join(SNAPSHOT_PREFIX, path[1:]
                                        if path[0] == '/' else path)
@@ -64,29 +64,25 @@ class FileChangeEventHandler(FileSystemEventHandler):
                 for file_name in self.all_files:
                     if tamper_detector.tamper_detect(target_path, file_name):
                         print "Tampered"
-                        subprocess.call(['mv', '-r', target_path,
+                        subprocess.call(['mv', target_path,
                                          target_path + str(time.time())])
             else:
                 if tamper_detector.tamper_detect(target_path, path):
                     print "Tampered"
                     snapshot_path = os.path.split(target_path)[0]
-                    subprocess.call(['mv', '-r',
+                    subprocess.call(['mv',
                                      snapshot_path,
                                      snapshot_path + str(time.time())])
             make_snapshots()
         except IOError:
-            print "IOError occured. Ignored"
+            pass
 
-def get_filenames(path, save_to):
-    for 
-    for each, _, files in os.walk(path):
-        for file_name in files:
-            save_to.append(os.path.join(each, file_name))
-
-def dummy(path):
-    import ipdb; ipdb.set_trace()
-    save_to = []
-    get_filenames(path, save_to)
+        def get_filenames(self, path):
+            files = []
+            for parent, _, children in os.walk(path):
+                for child in children:
+                    files.append("{}/{}".format(parent, child))
+            return files
 
 
 class FileTracker:

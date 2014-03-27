@@ -54,8 +54,7 @@ class HeartbeatServer:
         # aren't `None`.
         while True:
             if self._last_heartbeat_time:
-                if (time.clock() - self._last_heartbeat_time) > \
-                  self._check_interval + tolerance:
+                if (time.clock() - self._last_heartbeat_time) > self._check_interval + tolerance:
                     print "Client dead"
                     with open('heartbeat_record.record', 'a') as f:
                         f.write('{} - CLIENT DEAD'.format(time.clock()))

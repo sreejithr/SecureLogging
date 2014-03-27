@@ -10,17 +10,21 @@ function get_heartbeat() {
 	$.ajax({
    			url: '{{ url_for("check_heartbeat") }}',
    			success: function(result) {
-   				if (result == 'ALIVE')
-	   				$('#beacon').effect('highlight', {color: '#74F7A7'});
-	   			else if (result == 'DEAD')
+   				if (result == 'ALIVE') {
+	   				$('#beacon').effect('highlight', {color: '#74F7A7'}, 400);
+					$('#beacon').html('<h1 class="heartbeat_box">Heartbeat Received</h1>');
+				}
+	   			else if (result == 'DEAD') {
 	   				$('#beacon').animate({backgroundColor: '#F5BAC5'});
+					$('#beacon').html('<h1 class="heartbeat_box">Client Dead</h1>');
+				}
     		},
     	});
 }
 
 $(document).ready(
     function() {
-        $('#filesystem').fileTree({ root: '/Users/sreejith/a/' }, function(file) {
+        $('#filesystem').fileTree({ root: '/Users/sreejith/a/', script: 'filesystem' }, function(file) {
             alert(file);
         });
 });
@@ -49,10 +53,9 @@ $(document).ready(
 -->
     <div id='stat'>
     	<script type='text/javascript'>
-    		console.log('{{ heartbeat_timing }}');
-	 		setInterval(get_heartbeat, parseInt('{{ heartbeat_timing }}') * 1000);
-	 	</script>
-	 	<div id="beacon"><h1>Heartbeat received</h1></div>
+	 	setInterval(get_heartbeat, parseInt('{{ heartbeat_timing }}') * 1000);
+	 </script>
+	 <div id="beacon"><h1 class="heartbeat_box">Heartbeat Received</h1></div>
     </div>
 
     <div id='filesystem'>

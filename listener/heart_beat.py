@@ -43,7 +43,7 @@ class HeartbeatSender:
         self.sock = socket.socket()
         self.sock.connect((self._target_host, int(self._target_port)))
         while True:
-            self.sock.send(os.path.realpath(''))
+            self.sock.send("beat")
             time.sleep(time_period)
         self.sock.close()
 

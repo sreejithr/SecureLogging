@@ -2,17 +2,51 @@
 <html><head>
 <title>Remote LogSync</title>
 <link rel='stylesheet' type='text/css' href='{{ url_for("static", filename="styles/landing.css") }}'/>
+<script src="{{ url_for('static', filename='scripts/jquery-1.11.0.js') }}"></script>
+<script src="{{ url_for('static', filename='scripts/jquery-ui-1.10.4.custom.js') }}"></script>
+<script>
+function get_heartbeat() {
+	$.ajax({
+   			url: '{{ url_for("check_heartbeat") }}',
+   			success: function(result) {
+   				if (result == 'ALIVE')
+	   				$('#beacon').effect('highlight', {color: '#74F7A7'});
+	   			else if (result == 'DEAD')
+	   				$('#beacon').animate({backgroundColor: '#F5BAC5'});
+    		},
+    	});
+}
+</script>
 </head>
 
 <body>
 <div class='container'>
 	<div id='main_heading'>
-        <h1>Remote LogSync</h1>
+        <span id='title'><h1>Remote LogSync</h1></span>
+        <span id='settings_button'>
+            <a href='{{ url_for("settings") }}'>
+                <img src='{{ url_for('static', filename='images/gear-xxl.png') }}'>
+            </a>
+        </span>
     </div>
 
-    <script src="{{ url_for('static', filename='scripts/jquery-1.11.0.js') }}"></script>
-    <div id='stats'>
+<!--
+    heartbeat
+    alert
+    stats
+    	files
+    	health
+    filesystem
+-->
+    <div id='stat'>
+    	<script type='text/javascript'>
+    		console.log('{{ heartbeat_timing }}');
+	 		setInterval(get_heartbeat, parseInt('{{ heartbeat_timing }}') * 1000);
+	 	</script>
+	 	<div id="beacon"><h1>Heartbeat received</h1></div>
+    </div>
 
+    <div id='stats'>
     </div>
 
     <div id='filesystem'>

@@ -9,6 +9,7 @@ from flask import Flask, Response, render_template, request
 from settings import (DATABASE_NAME, FILES_TABLE_NAME, CLIENTS_TABLE_NAME,
                       CRITICAL_SETTINGS_FILE, RSYNC_BASE_DIR, CLIENT_NAME,
                       CONTROL_SIGNAL_RECEIVER_PORT)
+from user_settings import HEARTBEAT_TIMING
 from persistent_store import PersistentStore, set_critical_settings
 from werkzeug.contrib.fixers import ProxyFix
 
@@ -19,7 +20,9 @@ app.config['PORT'] = 5000
 
 @app.route('/')
 def index():
-    return render_template('landing.html')
+    values_to_page = { 'heartbeat_timing': HEARTBEAT_TIMING  }
+    return render_template('landing.html', **values_to_page)
+
 
 @app.route('/heartbeat')
 def check_heartbeat():
@@ -80,7 +83,7 @@ def settings():
             values_to_ui['error_message'] = "Error in saving. Check if "\
               "all fields are properly filled"
             values_to_ui['saved'] = False
-            return render_template('settings.html', **values_to_ui)
+            return render_templae('settings.html', **values_to_ui)
         return render_template('settings.html', **values_to_ui)
 
     client_ip, username = storage.get_clients_and_usernames(CLIENTS_TABLE_NAME)[0]

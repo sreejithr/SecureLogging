@@ -50,7 +50,7 @@ class FileChangeEventHandler(FileSystemEventHandler):
     def on_modified(self, event):
         tamper_detector = TamperDetector()
         path = event.src_path
-        print "Change detected"
+        print "Change detected in {}".format(path)
 
         self.all_files = []
         if os.path.isdir(path):
@@ -59,6 +59,7 @@ class FileChangeEventHandler(FileSystemEventHandler):
         try:
             target_path = os.path.join(SNAPSHOT_PREFIX, path[1:]
                                        if path[0] == '/' else path)
+            tampered = False
             if self.all_files:
                 for file_name in self.all_files:
                     if tamper_detector.tamper_detect(target_path, file_name):
@@ -76,10 +77,16 @@ class FileChangeEventHandler(FileSystemEventHandler):
         except IOError:
             print "IOError occured. Ignored"
 
-    def get_filenames(self, path, save_to):
-        for each, _, files in os.walk(path):
-            for file_name in files:
-                self.all_files.append(os.path.join(each, file_name))
+def get_filenames(path, save_to):
+    for 
+    for each, _, files in os.walk(path):
+        for file_name in files:
+            save_to.append(os.path.join(each, file_name))
+
+def dummy(path):
+    import ipdb; ipdb.set_trace()
+    save_to = []
+    get_filenames(path, save_to)
 
 
 class FileTracker:

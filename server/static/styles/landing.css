@@ -1,0 +1,42 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-size: 10px;
+}
+
+body {
+	background-color: gray;
+}
+
+.container {
+	background-color: white;
+	width: 800px;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
+#main_heading {
+	color: white;
+	background-color: black;
+	font-family: 'Geneva', sans-serif;
+}
+
+#title {
+	float: left;
+	width: 91%;
+}
+
+#settings_button img {
+	height: 50px;
+	weight: 50px;
+}
+
+#beacon {
+
+}
+
+	#beacon h1 {
+		text-align: center;
+		font-size: 2.7em;
+		font-family: 'Geneva', sans-serif;
+	}

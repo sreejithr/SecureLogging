@@ -41,7 +41,7 @@ class HeartbeatSender:
         Sends a simple "beat" string to the specified target
         """
         self.sock = socket.socket()
-        self.sock.connect((self._target_host, int(self._target_port)))        
+        self.sock.connect((self._target_host, int(self._target_port)))
         while True:
             self.sock.send(os.path.realpath(''))
             time.sleep(time_period)

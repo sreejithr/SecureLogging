@@ -5,6 +5,7 @@
 <script src="{{ url_for('static', filename='scripts/jquery-1.11.0.js') }}"></script>
 <script src="{{ url_for('static', filename='scripts/jquery-ui-1.10.4.custom.js') }}"></script>
 <script src="{{ url_for('static', filename='scripts/jqueryFileTree/jqueryFileTree.js') }}"></script>
+<link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='scripts/jqueryFileTree/jqueryFileTree.css') }}" />
 <script>
 function get_heartbeat() {
 	$.ajax({
@@ -12,19 +13,28 @@ function get_heartbeat() {
    			success: function(result) {
    				if (result == 'ALIVE') {
 	   				$('#beacon').effect('highlight', {color: '#74F7A7'}, 400);
-					$('#beacon').html('<h1 class="heartbeat_box">Heartbeat Received</h1>');
+					$('#beacon').html('<h1 class="heartbeat_box">Heartbeat Detected</h1>');
 				}
 	   			else if (result == 'DEAD') {
 	   				$('#beacon').animate({backgroundColor: '#F5BAC5'});
 					$('#beacon').html('<h1 class="heartbeat_box">Client Dead</h1>');
 				}
+                else if (result == 'UNKNOWN') {
+                    $('#beacon').animate({backgroundColor: '#F5F7A3'});
+                    $('#beacon').html('<h1 class="heartbeat_box">Client Dead</h1>');
+                }
+                else {
+                    $('#beacon').animate({backgroundColor: '#F5BAC5'});
+                    $('#beacon').html('<h1 class="heartbeat_box">'+ result +'</h1>');
+                }
     		},
     	});
 }
 
 $(document).ready(
     function() {
-        $('#filesystem').fileTree({ root: '/Users/sreejith/a/', script: 'filesystem' }, function(file) {
+        $('#filesystem').fileTree({root: '{{ backup_path }}', script: 'filesystem',
+                                   multifolder: true }, function(file) {
             alert(file);
         });
 });
@@ -43,21 +53,14 @@ $(document).ready(
         </span>
     </div>
 
-<!--
-    heartbeat
-    alert
-    stats
-    	files
-    	health
-    filesystem
--->
     <div id='stat'>
     	<script type='text/javascript'>
-	 	setInterval(get_heartbeat, parseInt('{{ heartbeat_timing }}') * 1000);
-	 </script>
-	 <div id="beacon"><h1 class="heartbeat_box">Heartbeat Received</h1></div>
+	 	    setInterval(get_heartbeat, parseInt('{{ heartbeat_timing }}')/4 * 1000);
+	    </script>
+	    <div id="beacon"><h1 class="heartbeat_box">Heartbeat Detected</h1></div>
     </div>
 
+    <h1 id='files_title'>Backed up Log Files</h1>
     <div id='filesystem'>
     </div>
 

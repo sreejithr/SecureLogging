@@ -52,9 +52,7 @@ class FileChangeEventHandler(FileSystemEventHandler):
         path = event.src_path
         print "Change detected in {}".format(path)
         
-        self.all_files = []
-        if os.path.isdir(path):
-            self.all_files = self.get_filenames(path)
+        self.all_files = self.get_filenames(path) if os.path.isdir(path) else []
 
         try:
             target_path = os.path.join(SNAPSHOT_PREFIX, path[1:]
@@ -63,12 +61,14 @@ class FileChangeEventHandler(FileSystemEventHandler):
             if self.all_files:
                 for file_name in self.all_files:
                     if tamper_detector.tamper_detect(target_path, file_name):
-                        print "Tampered"
+                        print "Tampering detected for {}".format(file_name)
+                        self.send_alert(file_name)
                         subprocess.call(['mv', target_path,
                                          target_path + str(time.time())])
             else:
                 if tamper_detector.tamper_detect(target_path, path):
-                    print "Tampered"
+                    print "Tampering detected for {}".format(path)
+                    self.send_alert(path)
                     snapshot_path = os.path.split(target_path)[0]
                     subprocess.call(['mv',
                                      snapshot_path,
@@ -77,12 +77,18 @@ class FileChangeEventHandler(FileSystemEventHandler):
         except IOError:
             pass
 
-        def get_filenames(self, path):
-            files = []
-            for parent, _, children in os.walk(path):
-                for child in children:
-                    files.append("{}/{}".format(parent, child))
-            return files
+    def send_alert(self, file_name):
+        self.sock = socket.socket()
+        self.sock.connect((SERVER_HOST, SERVER_PORT))
+        self.sock.send("{} TAMPERED")
+        self.sock.close()
+
+    def get_filenames(self, path):
+        files = []
+        for parent, _, children in os.walk(path):
+            for child in children:
+                files.append("{}/{}".format(parent, child))
+        return files
 
 
 class FileTracker:

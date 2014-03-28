@@ -25,7 +25,10 @@ function get_heartbeat() {
                 }
                 else {
                     $('#beacon').animate({backgroundColor: '#F5BAC5'});
-                    $('#beacon').html('<h1 class="heartbeat_box">'+ result +'</h1>');
+                    $('#beacon').html('<h1 class="heartbeat_box">Tampering Detected</h1>');
+                    $('#tampered_files').html('Tampered files: '+ result.split(' ')[1]);
+                    $('#last_tampered_time').html('Last tampering detected: '+ result.split(' ')[0]);
+                    $('#tamper_stats').show();
                 }
     		},
     	});
@@ -33,6 +36,7 @@ function get_heartbeat() {
 
 $(document).ready(
     function() {
+        $('#tamper_stats').hide();
         $('#filesystem').fileTree({root: '{{ backup_path }}', script: 'filesystem',
                                    multifolder: true }, function(file) {
             alert(file);
@@ -58,6 +62,13 @@ $(document).ready(
 	 	    setInterval(get_heartbeat, parseInt('{{ heartbeat_timing }}')/4 * 1000);
 	    </script>
 	    <div id="beacon"><h1 class="heartbeat_box">Heartbeat Detected</h1></div>
+    </div>
+
+    <div id='tamper_stats'>
+        <ul>
+            <li><p id="tampered_files"></p></li>
+            <li><p id="last_tampered_time"></p></li>
+        </ul>
     </div>
 
     <h1 id='files_title'>Backed up Log Files</h1>

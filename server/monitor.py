@@ -36,7 +36,7 @@ def check_heartbeat():
     elif "DEAD" in last_record:
         return "DEAD"
     elif "TAMPERED" in last_record:
-        return ' '.join(last_record.split(' ')[1:])
+        return last_record
     return "UNKNOWN"
 
 @app.route('/settings', methods=['POST', 'GET'])

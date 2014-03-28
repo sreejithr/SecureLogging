@@ -2,6 +2,7 @@ import json
 import socket
 
 from settings import DATABASE_NAME
+from persistent_store import PersistentStore
 
 
 class ControlSignalReceiver:
@@ -11,7 +12,7 @@ class ControlSignalReceiver:
 
     It listens on port 5555.
     """
-    def __call__(self, host='localhost', port='5555'):
+    def __call__(self, host='localhost', port='5657'):
         # Initialize the socket
         self.sock = socket.socket()
         self.sock.bind((host, int(port)))
@@ -54,7 +55,8 @@ class ControlSignalReceiver:
                 storage = PersistentStore(DATABASE_NAME)
             target_table = signal['paths']['target_table']
             client = signal['paths']['client']
-            paths = signal['paths']['paths']
+            paths = json.loads(signal['paths']['paths'])['paths']
+            import ipdb; ipdb.set_trace()
 
             # Store the paths in the DB
             storage.set_paths(target_table, client, paths)

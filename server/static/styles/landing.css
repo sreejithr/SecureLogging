@@ -63,3 +63,18 @@ h1#files_title {
 	font-size: 2.7em;
 	font-family: 'Geneva', sans-serif;
 }
+
+#tamper_stats {
+	font-size: 2.5em;
+	font-family: 'Geneva', sans-serif;
+}
+
+#tamper_stats h1 {
+	font-size: 2em;
+	background-color: #525151;
+	font-family: 'Geneva', sans-serif;
+}
+
+#tamper_stats ul {
+	list-style: none;
+}

@@ -37,8 +37,13 @@ class HeartbeatServer:
         while True:
             received = connection.recv(1024)
             if received:
+                if "TAMPERED" in received:
+                    with open('heartbeat_record.record', 'w') as f:
+                        f.write("{} {}\n".format(time.strftime("%H: %M: %S"),
+                                               received))
+                else:
+                    print "Got heartbeat from {}".format(address)
                 self._last_heartbeat_time = time.clock()
-                print "Got heartbeat from {}".format(address)
             else:
                 pass
 
@@ -57,7 +62,7 @@ class HeartbeatServer:
                 if (time.clock() - self._last_heartbeat_time) > self._check_interval + tolerance:
                     print "Client dead"
                     with open('heartbeat_record.record', 'a') as f:
-                        f.write('{} - CLIENT DEAD'.format(time.clock()))
+                        f.write('{} - CLIENT DEAD\n'.format(time.clock()))
             time.sleep(self._check_interval)
 
 if __name__ == '__main__':

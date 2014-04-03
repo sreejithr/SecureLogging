@@ -1,8 +1,10 @@
 #!/usr/bin/env python
+import os
 import json
 import sqlite3
 import sys
 import socket
+import urllib
 
 from flask import Flask, Response, render_template, request
 
@@ -20,7 +22,8 @@ app.config['PORT'] = 5000
 
 @app.route('/')
 def index():
-    values_to_page = { 'heartbeat_timing': HEARTBEAT_TIMING  }
+    values_to_page = { 'heartbeat_timing': HEARTBEAT_TIMING,
+                       'backup_path': BACKUP_PATH }
     return render_template('landing.html', **values_to_page)
 
 
@@ -28,7 +31,14 @@ def index():
 def check_heartbeat():
     with open('heartbeat_record.record') as f:
         last_record = f.readlines()[-1]
-    return "ALIVE" if "OK" in last_record else "DEAD"
+    if "OK" in last_record:
+        return "ALIVE"
+    elif "DEAD" in last_record:
+        return "DEAD"
+    elif "TAMPERED" in last_record:
+        return last_record
+    return "UNKNOWN"
+
 
 @app.route('/settings', methods=['POST', 'GET'])
 def settings():
@@ -103,13 +113,12 @@ def settings():
     values_to_ui['saved'] = None
     return render_template('settings.html', **values_to_ui)
 
-@app.route('/filesystem')
+@app.route('/filesystem', methods=['POST'])
 def filesystem():
     r=['<ul class="jqueryFileTree" style="display: none;">']
     try:
-        import pdb; pdb.set_trace()
         r=['<ul class="jqueryFileTree" style="display: none;">']
-        d=urllib.unquote(request.POST.get(BACKUP_PATH))
+        d=urllib.unquote(request.values.get('dir', BACKUP_PATH))
         for f in os.listdir(d):
             ff=os.path.join(d,f)
             if os.path.isdir(ff):
@@ -117,12 +126,12 @@ def filesystem():
             else:
                 e=os.path.splitext(f)[1][1:] # get .ext and remove dot
                 r.append('<li class="file ext_%s"><a href="#" rel="%s">%s</a></li>' % (e,ff,f))
-            r.append('</ul>')
+        r.append('</ul>')
     except Exception,e:
         r.append('Could not load directory: %s' % str(e))
     r.append('</ul>')
-    return HttpResponse(''.join(r))
-
+    return ''.join(r)
+   
 app.wsgi_app = ProxyFix(app.wsgi_app)
     
 if __name__ == '__main__':

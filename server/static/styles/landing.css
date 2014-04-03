@@ -9,15 +9,17 @@ body {
 }
 
 .container {
-	background-color: white;
+	background-color: #E8E6E7;
 	width: 800px;
 	margin: 0 auto;
+	height: 100%;
 	border: 1px solid black;
 }
 
 #main_heading {
 	color: white;
 	background-color: black;
+	padding-bottom: 10px;
 	font-family: 'Geneva', sans-serif;
 }
 
@@ -32,16 +34,47 @@ body {
 }
 
 #settings_button img {
+	padding-top: 8px;
 	height: 50px;
 	width: 50px;
 }
 
-#beacon {
+h1#files_title {
+	padding: 5px 5px;
+	text-align: center;
+	font-size: 2em;
+	color: white;
+	background-color: #525151;
+	font-family: 'Geneva', sans-serif;
+}
 
+#filesystem {
+	padding: 10px;
+	height: 400px;
+}
+
+#beacon {
+	background-color: white;
 }
 
 .heartbeat_box {
+	padding: 8px 8px;
 	text-align: center;
 	font-size: 2.7em;
 	font-family: 'Geneva', sans-serif;
+}
+
+#tamper_stats {
+	font-size: 2.5em;
+	font-family: 'Geneva', sans-serif;
+}
+
+#tamper_stats h1 {
+	font-size: 2em;
+	background-color: #525151;
+	font-family: 'Geneva', sans-serif;
+}
+
+#tamper_stats ul {
+	list-style: none;
 }
